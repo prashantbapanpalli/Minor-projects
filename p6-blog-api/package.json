@@ -1,0 +1,9 @@
+{
+  "name": "blog-rest-api",
+  "version": "1.0.0",
+  "description": "Blog REST API with CRUD operations",
+  "author": "B Prashant",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "dependencies": { "express": "^4.19.2" }
+}

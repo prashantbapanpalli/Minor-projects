@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#eef3f2;color:#222}
+.container{max-width:760px;margin:0 auto;padding:1rem}
+h1{color:#1d5d4d;text-align:center}
+.tabs,.row,.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin:.75rem 0}
+.col{display:flex;flex-direction:column;gap:.5rem}
+.grow{flex:1;min-width:120px}
+input,textarea,select{padding:.55rem;border:1px solid #bbb;border-radius:6px;font:inherit}
+button{padding:.5rem .9rem;border:0;border-radius:6px;background:#2f8f78;color:#fff;cursor:pointer}
+button.active{background:#1d5d4d}
+button.danger{background:#c0392b}
+.tabs button,.filters button{background:#cfd8d6;color:#222;text-transform:capitalize}
+.tabs button.active,.filters button.active{background:#1d5d4d;color:#fff}
+.list{list-style:none;padding:0}
+.item{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;background:#fff;padding:.7rem;border-radius:8px;margin-bottom:.5rem}
+.item.done span.grow{text-decoration:line-through;color:#888}
+.badge{font-size:.75rem;padding:.15rem .5rem;border-radius:999px}
+.badge.ok{background:#d4f1e4;color:#1b7a4b}.badge.pending{background:#fdebc8;color:#8a5a00}
+.notes{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.75rem;margin-top:.75rem}
+.note{background:#fff;padding:.9rem;border-radius:8px;box-shadow:0 1px 3px #0002}
+.note h3{margin:.4rem 0}.note p{white-space:pre-wrap}
+.search{width:100%;margin-top:1rem}
+.empty,footer{text-align:center;color:#777}
+footer{margin-top:2rem;font-size:.8rem}
+@media(max-width:500px){.item{font-size:.9rem}}

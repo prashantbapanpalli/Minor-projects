@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Smart Watch | Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Responsive navigation bar (Flexbox) -->
+  <header class="bg-white shadow sticky top-0">
+    <nav class="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4">
+      <a href="#" class="text-xl font-bold text-emerald-700">Aura</a>
+      <button id="menuBtn" class="md:hidden border rounded px-3 py-1" aria-label="Menu">Menu</button>
+      <ul id="menu" class="hidden md:flex w-full md:w-auto flex-col md:flex-row gap-2 md:gap-6 mt-3 md:mt-0">
+        <li><a class="hover:text-emerald-600" href="#hero">Home</a></li>
+        <li><a class="hover:text-emerald-600" href="#products">Products</a></li>
+        <li><a class="hover:text-emerald-600" href="#features">Features</a></li>
+        <li><a class="hover:text-emerald-600" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero banner with call-to-action -->
+  <section id="hero" class="bg-emerald-700 text-white text-center py-20 px-4">
+    <h1 class="text-3xl md:text-5xl font-bold mb-4">Time, reimagined.</h1>
+    <p class="max-w-xl mx-auto mb-8 text-emerald-100">Meet the Aura smart watch: 7-day battery, health tracking and a bright always-on display.</p>
+    <a href="#products" class="inline-block bg-white text-emerald-700 font-semibold px-6 py-3 rounded-lg hover:bg-emerald-50 transition">Shop Now</a>
+  </section>
+
+  <!-- Product cards (CSS Grid) -->
+  <section id="products" class="max-w-6xl mx-auto py-16 px-4">
+    <h2 class="text-2xl font-bold text-center mb-8">Our Products</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="card bg-white rounded-xl shadow p-6 text-center"><div class="text-5xl mb-3">&#8986;</div><h3 class="font-semibold">Aura Lite</h3><p class="text-sm text-slate-500 my-2">Everyday essentials</p><p class="font-bold text-emerald-700">Rs 2,999</p></div>
+      <div class="card bg-white rounded-xl shadow p-6 text-center"><div class="text-5xl mb-3">&#9201;</div><h3 class="font-semibold">Aura Pro</h3><p class="text-sm text-slate-500 my-2">GPS and heart-rate</p><p class="font-bold text-emerald-700">Rs 5,499</p></div>
+      <div class="card bg-white rounded-xl shadow p-6 text-center"><div class="text-5xl mb-3">&#128142;</div><h3 class="font-semibold">Aura Elite</h3><p class="text-sm text-slate-500 my-2">Premium steel build</p><p class="font-bold text-emerald-700">Rs 8,999</p></div>
+    </div>
+  </section>
+
+  <section id="features" class="bg-white py-16 px-4">
+    <div class="max-w-6xl mx-auto grid gap-6 md:grid-cols-3 text-center">
+      <div><h3 class="font-semibold text-lg">Long battery</h3><p class="text-slate-500">Up to 7 days on one charge.</p></div>
+      <div><h3 class="font-semibold text-lg">Health tracking</h3><p class="text-slate-500">Heart rate, sleep and steps.</p></div>
+      <div><h3 class="font-semibold text-lg">Water resistant</h3><p class="text-slate-500">Swim and shower with it.</p></div>
+    </div>
+  </section>
+
+  <footer id="contact" class="bg-slate-900 text-slate-300 py-8 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <p>Contact: hello@aura.example | Dharwad, India</p>
+      <div class="flex gap-4"><a href="#" class="hover:text-white">Instagram</a><a href="#" class="hover:text-white">Twitter</a><a href="#" class="hover:text-white">YouTube</a></div>
+    </div>
+    <p class="text-center text-xs mt-4">&copy; 2026 Aura. Made by B Prashant.</p>
+  </footer>
+
+  <script>document.getElementById('menuBtn').onclick = () => document.getElementById('menu').classList.toggle('hidden')</script>
+</body>
+</html>

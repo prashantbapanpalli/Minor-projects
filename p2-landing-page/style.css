@@ -1,0 +1,5 @@
+/* Plain CSS3: transitions, hover effects and a media query alongside Tailwind */
+html{scroll-behavior:smooth}
+.card{transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 24px #0002}
+@media(max-width:480px){h1{font-size:1.9rem}}
